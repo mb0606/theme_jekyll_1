@@ -1,0 +1,32 @@
+footer
+
+	width: 100%
+	background: rgba(0,0,0, .9)
+
+	.lockup
+		padding: 20px 30px 
+		+clearfix
+
+		.logo
+			+size(50px)
+			float: left
+			margin-right: 30px
+
+			path 
+				fill: white
+
+		.content-wrap
+			float: left
+
+			a
+				display: inline-block
+				margin-right: 30px
+				color: white
+				@extend %small-bold
+				&:hover
+					color: rgba(255,255,255,0.7)
+
+			.copyright
+				color: rgba(255,255,255, .9)
+				font-size: 12px
+				
