@@ -2,16 +2,11 @@ header
 	
 	width: 100%
 	height: 450px
-	background: linear-gradient(#000, transparent 40%), linear-gradient(0deg, #fff, transparent 40%), url(../img/hero-bg.jpg) top center
-	background-size: cover
-
-	.logo 
-		+size(50px)
-		float: left
-		margin: 10px 0 0 30px
-
-		path
-			fill: white
+	// background-image: url(../img/logo.svg), url(../img/hero-bg.jpg) 
+	// background: none, linear-gradient(#000, transparent 40%), linear-gradient(0deg, #fff, transparent 40%)
+	background-repeat: no-repeat, no-repeat
+	background-size: 50px 50px , cover
+	background-position: 30px 30px, 50% 50%
 
 	nav 
 		float: right
@@ -57,14 +52,15 @@ header
 @media screen and (max-width: 650px)
 
 	header
-		.logo
-			float: none
-			margin: 0 auto
-			padding-top: 30px
+		margin-top: 0px
+		background-position: 50% 10px, 50% 50%
+
 
 		nav 
+			
 			float: none
 			text-align: center
+			padding-top: 70px
 
 			a
 				margin: 0 10px 0 10px

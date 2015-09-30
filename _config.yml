@@ -1,11 +1,10 @@
 # Build settings
-title: "Workout Theme"
-description: "Thinker // Designer // Youtuber"
 
 markdown: kramdown
 permalink: pretty
 
-port: 3000
+port: 8000
+
 
 sass:
   sass_dir: assets/css

@@ -1,22 +1,18 @@
 footer
 
 	width: 100%
-	background: rgba(0,0,0, .9)
+	background-repeat: no-repeat
+	background-size: 50px 50px
+	background-position: 30px 50px
+
 
 	.lockup
-		padding: 20px 30px 
+		padding: 50px 30px 
 		+clearfix
-
-		.logo
-			+size(50px)
-			float: left
-			margin-right: 30px
-
-			path 
-				fill: white
 
 		.content-wrap
 			float: left
+			margin-left: 80px
 
 			a
 				display: inline-block
@@ -30,3 +26,22 @@ footer
 				color: rgba(255,255,255, .9)
 				font-size: 12px
 				
+@media screen and (max-width: 650px)
+
+	footer
+		margin-top: 0px
+		background-position: 50% 15px
+
+		.lockup
+			padding: 50px 0 20px 0
+			width: 100%
+			.content-wrap
+				float: none
+				padding-top: 30px
+				text-align: center
+				margin: 0 auto
+				a
+					margin: 0 15px
+				
+
+
