@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 	smoothScroll(1000)
+	workBelt()
   //
 
 });
@@ -17,4 +18,18 @@ function smoothScroll (duration) {
 			}, duration);
 		}
 	})
+}
+
+function workBelt() {
+	$('.thumb-unit').click(function() {
+		event.preventDefault();
+		$('.work-container').show();
+		$('.work-belt').css('left', '-100%');
+	});
+
+	$('.work-return').click(function() {
+		$('.work-container').hide();
+		$('.work-belt').css('left', '0%');
+	});
+
 }
